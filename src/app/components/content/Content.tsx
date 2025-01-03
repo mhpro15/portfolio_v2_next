@@ -15,16 +15,27 @@ export const Content = () => {
   const { currentTab } = context;
   return (
     <div>
-      <div className=" flex flex-col md:flex-row mx-3 min-h-[900px]">
-        <div className="flex flex-col w-full md:max-w-[30%] ">
+      <div
+        className={
+          currentTab !== "about"
+            ? "flex flex-col md:flex-row mx-3 min-h-[900px] duration-500 ease-out"
+            : "min-h-[900px] duration-500 ease-in"
+        }
+      >
+        <div
+          className={
+            currentTab !== "about"
+              ? "flex flex-col w-full md:max-w-[30%] duration-500 ease-out"
+              : "w-full md:max-w-[100%] duration-500 ease-in"
+          }
+        >
           <div className="flex flex-col gap-5  h-full">
             <ProfilePicture />
             <Info />
           </div>
         </div>
-        <div className="flex flex-col w-full md:max-w-[70%] m3">
+        <div className="flex flex-col w-full md:max-w-[70%]">
           {currentTab === "contact" && <Contact />}
-          {/* {currentTab === "about" && <About />} */}
           {currentTab === "experience" && <Experienece />}
         </div>
       </div>

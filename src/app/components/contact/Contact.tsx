@@ -78,7 +78,7 @@ export const Contact: React.FC = () => {
   };
 
   return (
-    <div className="w-[80%] mx-auto">
+    <div className="w-[80%] mx-auto duration-500 ease-in-out">
       <p className="text-4xl mb-5 text-center">Contact Me</p>
       <form
         className="flex flex-col gap-4 justify-center w-full"

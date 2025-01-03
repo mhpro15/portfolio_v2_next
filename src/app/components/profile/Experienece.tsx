@@ -2,7 +2,7 @@ import { exp } from "../../../data/exp";
 
 export const Experienece = () => {
   return (
-    <div className="p-10  font-lato bg-glass-box rounded-xl mx-3 ">
+    <div className="p-10  font-lato bg-glass-box rounded-xl mx-3">
       <p className="text-header-white text-2xl">Work Experience</p>
       {exp.map((item, index) => (
         <div key={index}>
