@@ -2,14 +2,17 @@ import StackIcon from "tech-stack-icons";
 import { TbHandFingerDown } from "react-icons/tb";
 export const About = () => {
   return (
-    <div className="p-5 mb-20 xl:text-lg text-[1rem] max-w-[800px] mx-auto">
-      <p className="text-text-white mt-5">
+    <div className="p-5 xl:text-lg text-[1rem] max-w-[800px] mx-auto">
+      <p className="text-text-white mt-5 leading-7">
         I am a software developer with a passion for building products that
-        people love. I have experience in full-stack development, and I am not
-        tied to any particular technology. I am always eager to learn new things
-        and work with new technologies. This website was built as my practice
-        with Next.js and custom component, hooks usage etc. Check out my tech
-        stack below.
+        people love. I have experience in full-stack development and am not tied
+        to any particular technology because I believe that what truly matters
+        is logical thinking and the approach to solving problems, not just the
+        tools used. With an eagerness to learn and explore new technologies, I
+        am always looking for new challenges. <br />
+        This website was created as a practice project using Next.js, custom
+        components, React hooks, and more. Feel free to check out my tech stack
+        below!
       </p>
 
       <div className="mt-5 flex flex-row gap-5 justify-between">
