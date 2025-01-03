@@ -86,7 +86,7 @@ export const Contact: React.FC = () => {
       >
         <div className="flex flex-col gap-1">
           <input
-            className=" w-[50%] min-w-[300px] max-w-[400px] rounded-full border-2 px-5 py-1 bg-transparent m-auto "
+            className=" w-[50%] min-w-[250px] max-w-[400px] rounded-full border-2 px-5 py-1 bg-transparent m-auto "
             type="text"
             name="name"
             value={formState.name}
@@ -98,7 +98,7 @@ export const Contact: React.FC = () => {
 
         <div className="flex flex-col gap-1">
           <input
-            className="w-[50%] min-w-[300px] max-w-[400px] rounded-full border-2 px-5 py-1 bg-transparent  m-auto"
+            className="w-[50%] min-w-[250px] max-w-[400px] rounded-full border-2 px-5 py-1 bg-transparent  m-auto"
             type="email"
             name="email"
             value={formState.email}
@@ -112,7 +112,7 @@ export const Contact: React.FC = () => {
 
         <div className="flex flex-col gap-1">
           <textarea
-            className="w-[50%] min-w-[300px] max-w-[400px] min-h-[250px] max-h-[250px] rounded-lg border-2 px-5 py-1 bg-transparent  m-auto"
+            className="w-[50%] min-w-[250px] max-w-[400px] min-h-[250px] max-h-[250px] rounded-lg border-2 px-5 py-1 bg-transparent  m-auto"
             name="message"
             value={formState.message}
             onChange={handleChange}
@@ -126,7 +126,7 @@ export const Contact: React.FC = () => {
 
         <button
           disabled={isSubmitting}
-          className="w-[50%] min-w-[300px] max-w-[400px] rounded-full border-2 px-2 py-1 bg-transparent m-auto hover:bg-text-white hover:text-[#000000] transition-all duration-300 ease-in-out"
+          className="w-[50%] min-w-[250px] max-w-[400px] rounded-full border-2 px-2 py-1 bg-transparent m-auto hover:bg-text-white hover:text-[#000000] transition-all duration-300 ease-in-out"
           type="submit"
         >
           {isSubmitting ? "Submitting..." : "Submit"}
