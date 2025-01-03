@@ -78,7 +78,6 @@ export const Controls = () => {
   }, [isPlaying, startAnimation, updateProgress, audioRef]);
 
   const onLoadedMetadata = () => {
-    console.log("onLoadedMetadata");
     const seconds = audioRef.current?.duration;
     if (seconds !== undefined) {
       setDuration(seconds);
@@ -89,7 +88,7 @@ export const Controls = () => {
   };
   useEffect(() => {
     onLoadedMetadata();
-  }, []);
+  });
   const skipForward = () => {
     if (audioRef.current) {
       audioRef.current.currentTime += 15;

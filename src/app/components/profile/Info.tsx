@@ -26,7 +26,7 @@ export const Info = () => {
         </a>
       </div>
       <div>
-        <a href="../../../data/resume.pdf" target="_blank">
+        <a href="./resume.pdf" target="_blank">
           <button className=" mx-auto font-bold rounded-full border-2 w-full max-w-[400px] p-2 mt-20 flex justify-between hover:bg-text-white hover:text-[#000000] transition-all duration-300 ease-in-out">
             <p></p>
             <p className="ml-7">Download Resume</p>

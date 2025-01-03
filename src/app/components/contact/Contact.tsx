@@ -9,6 +9,7 @@ interface FormState {
 }
 
 export const Contact: React.FC = () => {
+  const [success, setSuccess] = useState(false);
   const [formState, setFormState] = useState<FormState>({
     name: "",
     email: "",
@@ -55,7 +56,7 @@ export const Contact: React.FC = () => {
       setErrors(errors);
 
       if (!errors.name && !errors.email && !errors.message) {
-        await fetch("/api/email", {
+        const res = await fetch("/api/email", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -63,6 +64,11 @@ export const Contact: React.FC = () => {
           body: JSON.stringify(formState),
         });
         setFormState({ name: "", email: "", message: "" });
+        if (res.ok) {
+          setSuccess(true);
+        } else {
+          setSuccess(false);
+        }
       }
     } catch (error) {
       console.error(error);
@@ -72,7 +78,7 @@ export const Contact: React.FC = () => {
   };
 
   return (
-    <div className="w-[80%] m-auto">
+    <div className="w-[80%] mx-auto">
       <p className="text-4xl mb-5 text-center">Contact Me</p>
       <form
         className="flex flex-col gap-4 justify-center w-full"
@@ -126,6 +132,11 @@ export const Contact: React.FC = () => {
           {isSubmitting ? "Submitting..." : "Submit"}
         </button>
       </form>
+      {success && (
+        <p className="text-header-white text-center mt-5">
+          Your message has been sent successfully! I will get back to you soon.
+        </p>
+      )}
     </div>
   );
 };
