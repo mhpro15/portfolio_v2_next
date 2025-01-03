@@ -11,7 +11,7 @@ export const Navbar = () => {
 
   const { currentTab, setCurrentTab } = context;
   return (
-    <div className="p-5 mt-10 mb-20 xl:text-lg text-[1rem] flex">
+    <div className="p-5 mt-10 mb-20 xl:text-lg text-[1rem] max-[480px]:text-sm flex">
       <div className="flex flex-row gap-20 mx-auto justify-center">
         <a
           href="#experience"

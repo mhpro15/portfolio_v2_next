@@ -2,10 +2,7 @@ import StackIcon from "tech-stack-icons";
 import { TbHandFingerDown } from "react-icons/tb";
 export const About = () => {
   return (
-    <div
-      id="about"
-      className="p-5 mb-20 xl:text-lg text-[1rem] max-w-[800px] mx-auto"
-    >
+    <div className="p-5 mb-20 xl:text-lg text-[1rem] max-w-[800px] mx-auto">
       <p className="text-text-white mt-5">
         I am a software developer with a passion for building products that
         people love. I have experience in full-stack development, and I am not
