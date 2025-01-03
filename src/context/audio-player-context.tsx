@@ -28,8 +28,8 @@ interface AudioPlayerContextType {
   duration: number;
   setDuration: Dispatch<SetStateAction<number>>;
   setTrackIndex: Dispatch<SetStateAction<number>>;
-  audioRef: RefObject<HTMLAudioElement | null>;
-  progressBarRef: RefObject<HTMLInputElement | null>;
+  audioRef: RefObject<HTMLAudioElement>;
+  progressBarRef: RefObject<HTMLInputElement>;
   isPlaying: boolean;
   setIsPlaying: Dispatch<SetStateAction<boolean>>;
 }
@@ -46,8 +46,8 @@ export const AudioPlayerProvider = ({ children }: { children: ReactNode }) => {
   const [duration, setDuration] = useState<number>(0);
   const [isPlaying, setIsPlaying] = useState<boolean>(false);
 
-  const audioRef = useRef<HTMLAudioElement | null>(null);
-  const progressBarRef = useRef<HTMLInputElement | null>(null);
+  const audioRef = useRef<HTMLAudioElement>(null);
+  const progressBarRef = useRef<HTMLInputElement>(null);
 
   const contextValue = {
     currentTrack,
