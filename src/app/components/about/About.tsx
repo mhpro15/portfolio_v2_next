@@ -1,5 +1,4 @@
 import StackIcon from "tech-stack-icons";
-import { TbHandFingerDown } from "react-icons/tb";
 import Link from "next/link";
 export const About = () => {
   return (
