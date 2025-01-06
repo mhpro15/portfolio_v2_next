@@ -25,6 +25,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <script
+        defer
+        data-website-id="677b8eb73579b87bc9d19ee4"
+        data-domain="manhhung.app"
+        src="https://datafa.st/js/script.js"
+      ></script>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
