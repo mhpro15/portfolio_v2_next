@@ -29,7 +29,7 @@ export default function RootLayout({
         <script
           defer
           data-website-id="677b8eb73579b87bc9d19ee4"
-          data-domain="https://www.manhhung.app"
+          data-domain="www.manhhung.app"
           src="https://datafa.st/js/script.js"
         ></script>
       </head>
