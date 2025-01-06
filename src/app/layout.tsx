@@ -24,18 +24,22 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <script
-        defer
-        data-website-id="677b8eb73579b87bc9d19ee4"
-        data-domain="https://www.manhhung.app"
-        src="https://datafa.st/js/script.js"
-      ></script>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        <TabContextProvider>{children}</TabContextProvider>
-      </body>
-    </html>
+    <>
+      <head>
+        <script
+          defer
+          data-website-id="677b8eb73579b87bc9d19ee4"
+          data-domain="https://www.manhhung.app"
+          src="https://datafa.st/js/script.js"
+        ></script>
+      </head>
+      <html lang="en">
+        <body
+          className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        >
+          <TabContextProvider>{children}</TabContextProvider>
+        </body>
+      </html>
+    </>
   );
 }
