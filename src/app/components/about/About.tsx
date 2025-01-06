@@ -1,5 +1,6 @@
 import StackIcon from "tech-stack-icons";
 import { TbHandFingerDown } from "react-icons/tb";
+import Link from "next/link";
 export const About = () => {
   return (
     <div className="p-5 xl:text-lg text-[1rem] max-w-[800px] mx-auto">
@@ -82,12 +83,18 @@ export const About = () => {
         </div>
       </div>
 
-      <p className="mt-20 text-center">
-        Don&rsquo;t forget to check out my playlist below
+      <p className="mt-20 text-center text-text-white">
+        Check out my latest project:
+        <Link
+          target="_blank"
+          className="text-header-white"
+          href="https://banking-app-nine-rho.vercel.app"
+        >
+          {" "}
+          Transaction management and tranfer website!
+        </Link>
       </p>
-      <div className="mx-auto w-1">
-        <TbHandFingerDown />
-      </div>
+      <div className="mx-auto w-1"></div>
     </div>
   );
 };
